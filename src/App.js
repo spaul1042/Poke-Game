@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Pokedox from './Pokedox'
 
-function App() {
+class App extends Component {
+  render(){
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+    <Pokedox
+     pokeman = {[
+       { id:1 , name:"Rockstar" ,type:"peaceful" ,exp: 20 } ,
+       { id:2 , name:"Rockstar" ,type:"peaceful" ,exp: 30 } ,
+       { id:3 , name:"Rockstar" ,type:"peaceful" ,exp: 40 } ,
+       { id:4 , name:"Rockstar" ,type:"peaceful" ,exp: 50 } ,
+       { id:5 , name:"Rockstar" ,type:"peaceful" ,exp: 60 } ,
+       { id:6 , name:"Rockstar" ,type:"peaceful" ,exp: 70 } ,
+     
+     ]}
+     />
+     
+
     </div>
   );
+
+  }
 }
 
 export default App;
