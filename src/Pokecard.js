@@ -6,13 +6,12 @@ class Pokecard extends Component {
   render(){
   let imgsrc = `${y}${this.props.id}.png` ;
   return (
-    <div>
-    <h2>{this.props.id}</h2>
-    <img src ={imgsrc} alt="Loading"/> 
-    <p> I am random </p>
-    <p>{this.props.name}</p>
-    <p>{this.props.type}</p>
-    <p>{this.props.exp}</p>
+    <div className="Pokecard-main">
+    <h2>Card Id-{this.props.id}</h2>
+    <img className="Pokecard-image" src ={imgsrc} alt="Loading"/> 
+    <p>Card Name- {this.props.name}</p>
+    <p>Card Type {this.props.type}</p>
+    <p>Experience - {this.props.exp}</p>
     </div>
    
   );

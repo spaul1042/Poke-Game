@@ -1,3 +1,11 @@
 .Pokecard-main{
     border: 2px solid gray;
+    margin: 50px;
+    padding:10px;
+    width:300px
+    
+}
+.Pokecard-image{
+    height: 70px;
+    width:100px;
 }
